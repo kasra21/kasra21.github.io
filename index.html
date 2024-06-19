@@ -34,11 +34,39 @@
       width: 100%;
       margin-top: 8px;
     }
-    .card-title, .card-text {
+    .card-title, .card-text, .title-container {
       text-align: center; 
     }
     .card-container {
       margin-top: 8px;
+    }
+    #home {
+      background-image: url('home.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px; /* Adjust the width as needed */
+      margin: 0 auto;
+    }
+
+    .timeline-item {
+      padding: 20px;
+      border-left: 2px solid #007bff; /* Adjust color as needed */
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .timeline-content {
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -63,7 +91,7 @@
           <a class="nav-link" href="#skillset">Skillset</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#showcase">Showcase</a>
+          <a class="nav-link" href="#timeline">Professional Timeline</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -75,15 +103,14 @@
 
 <!-- Home Section -->
 <section id="home" class="section">
-  <div class="container">
-    <h2>Home</h2>
-    <p>Hey it's me Kasra!</p>
+  <div class="container title-container">
+    <p>Hey it's me, Kasra!</p>
   </div>
 </section>
 
 <!-- About Section -->
 <section id="about" class="section bg-light">
-  <div class="container">
+  <div class="containe title-container">
     <h2>About</h2>
     <p>I have more than 7 years of experience as a software engineer specializing in software design and process. My skills allow me to create efficient and scalable solutions that minimize heavy load.</p>
     <p>I am enthusiastic about creating inventive software solutions and have expertise in developing back-end microservices, primarily using Java and springboot and framework, but I also have experience with other platforms like ServiceNow.</p> 
@@ -91,13 +118,13 @@
     <p>In my spare time, I find pleasure in exploring new tools and enhancing the infrastructure supporting various services. I also have a keen interest in experimenting with machine learning models such as neural networks and genetic algorithms.</p>
     <p>Yes, I believe we all need to work with SkyNet soon :-)</p>
     <br>
-    <p>P.S. I tend to steer clear of social media, including LinkedIn. I believe there's too much emphasis on comparison in those platforms.</p>
+    <p>P.S. I tend to steer clear of social media, including LinkedIn. I believe there's too much emphasis on comparison with a lot of misleading messages in those platforms.</p>
   </div>
 </section>
 
 <!-- Skillset Section -->
 <section id="skillset" class="section bg-light">
-  <div class="container">
+  <div class="container title-container">
     <h2>Skillset</h2>
     <div class="row">
       <div class="col-md-6 mb-6 card-container">
@@ -106,8 +133,8 @@
           <div class="card-body">
             <h5 class="card-title">Full Stack developer</h5>
             <p class="card-text">
-              I specialize in developing resilient, scalable, and intuitive web applications and backend services. 
-              My experience includes working with Java using Spring Boot or frameworks, as well as Angular. 
+              I specialize in developing resilient, scalable, and intuitive web applications and backend services.
+              My experience includes working with Java using Spring Boot and other frameworks, as well as Angular. 
               Furthermore, I utilize relational databases for storage solutions.
             </p>
           </div>
@@ -119,9 +146,9 @@
           <div class="card-body">
             <h5 class="card-title">API Design</h5>
             <p class="card-text">
-              I create, develop, and manage backend microservices and APIs using Spring Boot, 
-              and I specialize in event-driven architectures such as RabbitMQ and Kafka.
-              I also have designed and consumed graphQL APIs. 
+              I create, develop, and manage backend microservices and APIs using Spring Boot. 
+              I specialize in event-driven architectures, leveraging technologies such as RabbitMQ and Kafka. 
+              Additionally, I have experience in designing and consuming GraphQL APIs.
             </p>
           </div>
         </div>
@@ -132,9 +159,7 @@
           <div class="card-body">
             <h5 class="card-title">Performence optimization</h5>
             <p class="card-text">
-              I have optimized systems and increased performance by reducing the migration cycle time and improved the speed of jobs execution. 
-              Improved the speed of microservices workflows in some cases by as much as 5 times.
-              I achieved this by cleaning up the code, introducing caching, normalizing and avoiding joints in the database queries.
+              I have optimized systems and enhanced performance by reducing migration cycle times and improving job execution speeds. Specifically, I have accelerated microservices workflows by up to 5 times in certain cases. These improvements were achieved through code cleanup, introduction of caching mechanisms, normalization of database queries, and minimizing joins.
             </p>
           </div>
         </div>
@@ -155,11 +180,11 @@
 </section>
 
 <!-- Showcase Section -->
-<section id="showcase" class="section bg-light">
-  <div class="container">
+<!-- <section id="showcase" class="section bg-light">
+  <div class="container title-container">
     <h2>Showcase</h2>
     <div class="row">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 card-container">
         <div class="card">
           <img src="image1.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
@@ -169,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 card-container">
         <div class="card">
           <img src="image2.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body">
@@ -179,7 +204,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 card-container">
         <div class="card">
           <img src="image3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
@@ -191,19 +216,46 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<!-- Timeline Section -->
+<section id="timeline" class="section bg-light">
+  <div class="container title-container">
+    <h2>Professional Timeline</h2>
+    <div class="row">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Year - Year</h3>
+            <p>Description of your experience or achievement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more timeline items as needed -->
+  </div>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="section">
   <div class="container">
-    <h2>Contact</h2>
-    <p>
+    <h2 class="title-container">Contact</h2>
+    <!-- <p>
       <i class="fab fa-linkedin" aria-hidden="true"></i> Find me on 
       <a href="https://www.linkedin.com/in/kasra-g-5407b655/">LinkedIn</a>
-    </p>
+    </p> -->
     <p>
       <i class="fab fa-github" aria-hidden="true"></i> Glance at my code at 
       <a href="https://github.com/kasra21">Github</a>
+    </p>
+    <p>
+      <i class="fas fa-file" aria-hidden="true"></i> Get a copy of my  
+      <a href="resume.docx" target="_blank" rel="noopener noreferrer">Resume</a>
+    </p>
+    <p>
+      <i class="fas fa-envelope" aria-hidden="true"></i> Contact me at 
+      <a href="mailto:kasrakazemi125@gmail.com">kasrakazemi125@gmail.com</a> 
     </p>
   </div>
 </section>
